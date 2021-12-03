@@ -12,18 +12,21 @@ public class Person {
     }
 
     // Constructor Overloading
-    public Person(String paramName) {
-        this.name = paramName;
+    public Person(String name) {
+        this.name = name;
     }
 
     // Constructor Overloading
-    public Person(String paramName, String paramAddress) {
-        this.name = paramName;
-        this.address = paramAddress;
+    public Person(String name, String address) {
+        this.name = name;
+        this.address = address;
     }
 
     // Method
-    public void sayHello(String paramName) {
-        System.out.println("Hello " + paramName + ", My name is " + name);
+    public void sayHello() {
+        this.sayHello("Bos");
+    }
+    public void sayHello(String name) {
+        System.out.println("Hello " + name + ", My name is " + this.name);
     }
 }
