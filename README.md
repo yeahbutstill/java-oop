@@ -49,3 +49,7 @@
 - Di dalam class Java, kita bisa membuat constructor, constructor adalah method yang akan dipanggil saat pertama kali Object itu dibuat.
 - Mirip seperti di method, kita bisa memberi parameter pada constructor
 - Nama constructor harus sama dengan nama class, dan tidak membutuhkan kata kunci void atau return value
+
+## Constructor Overloading
+- Sama seperti di method, di constructor pun kita bisa melakukan overloading
+- Kita bisa membuat constructor lebih dari satu, dengan syarat tipe data parameter harus berbeda, atau jumlah parameter harus berbeda

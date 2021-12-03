@@ -27,5 +27,19 @@ public class PersonApp {
         System.out.println(person1.country);
         System.out.println(person2);
         System.out.println(person3);
+
+        var person4 = new Person("AAA", "BBB");
+        System.out.println(person4.name);
+        System.out.println(person4.address);
+        System.out.println(person4.country);
+
+        person4.sayHello("Budi");
+
+        Person person5 = new Person("Budi");
+
+        Person person6;
+        person6 = new Person();
+        person6.name = "Joko";
+        person6.sayHello("Budi");
     }
 }

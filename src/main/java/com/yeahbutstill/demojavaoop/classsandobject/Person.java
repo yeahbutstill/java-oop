@@ -11,7 +11,12 @@ public class Person {
     public Person() {
     }
 
-    // Constructor
+    // Constructor Overloading
+    public Person(String paramName) {
+        this.name = paramName;
+    }
+
+    // Constructor Overloading
     public Person(String paramName, String paramAddress) {
         this.name = paramName;
         this.address = paramAddress;
