@@ -16,8 +16,10 @@ public class PersonApp {
         // Mengakses Method
         person2.sayHello("Dani");
 
+        // Menggunakan Constructor dengan parameter
         Person person3;
-        person3 = new Person();
+        person3 = new Person("Maya", "Depok");
+        person3.sayHello("Dani Setiawan");
 
         // Mengambil data
         System.out.println(person1.name);

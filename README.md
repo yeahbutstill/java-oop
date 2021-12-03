@@ -44,4 +44,8 @@
 - Sama seperti method biasanya, kita juga bisa menambahkan return value, parameter dan method overloading di method yang ada di dalam block class
 - Untuk mengakses method tersebut, kita bisa menggunakan tanda titik (.) dan diikuti dengan nama method nya, Sama seperti mengakses field.
 
-## 
+## Constructor
+- Saat kita membuat Object, maka kita seperti memanggil sebuah method, karena kita menggunakan kurung()
+- Di dalam class Java, kita bisa membuat constructor, constructor adalah method yang akan dipanggil saat pertama kali Object itu dibuat.
+- Mirip seperti di method, kita bisa memberi parameter pada constructor
+- Nama constructor harus sama dengan nama class, dan tidak membutuhkan kata kunci void atau return value
