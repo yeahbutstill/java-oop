@@ -22,3 +22,7 @@
 ## Membuat Class
 - Untuk membuat class, kita bisa menggunakan kata kunci class.
 - Penamaan class biasanya menggunakan format CamelCase.
+
+## Membuaat Object
+- Object adalah hasil instansiasi dari sebuah class
+- Untuk membuat object kita bisa menggunakan kata kunci new, dan diikuti dengan nama Class dan kurung()
