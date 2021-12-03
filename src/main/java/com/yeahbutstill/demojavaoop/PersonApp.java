@@ -10,7 +10,7 @@ public class PersonApp {
         person1.name = "Dani";
         person1.address = "Citayam";
         // person1.country = "Tidak bisa Diubah";
-        
+
         Person person2 = new Person();
         person2.name = "Maya";
         // Mengakses Method
