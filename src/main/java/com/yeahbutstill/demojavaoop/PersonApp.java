@@ -12,6 +12,10 @@ public class PersonApp {
         // person1.country = "Tidak bisa Diubah";
         
         Person person2 = new Person();
+        person2.name = "Maya";
+        // Mengakses Method
+        person2.sayHello("Dani");
+
         Person person3;
         person3 = new Person();
 
