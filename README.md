@@ -109,3 +109,9 @@
 - Method overriding adalah kemampuan mendeklarasikan ulang method di child class, yang sudah ada di parent class
 - Saat kita melakukan proses overriding tersebut, secara otomatis ketika kita membuat object dari class child, method
   yang di class parent tidak bisa diakses lagi.
+         
+## Super Keyword
+- Kadang kita ingin mengakses method yang terdapat di class parent yang sudah terlanjur kita override di class child
+- Untuk mengakses method milik class parent kita bisa menggunakan kata kunci super
+- sederhananya, super digunakan untuk mengakses class parent
+- tidak hanya method, field milik parent class pun bisa kita akses menggunakan kata kunci super
