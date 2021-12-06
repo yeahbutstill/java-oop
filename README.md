@@ -91,3 +91,10 @@
 - Misal kadang kita butuh mengakses sebuah field yang namanya sama dengan parameter method, hal ini tidak bisa dilakukan jika langsung menyebutkan field, kita bisa mengakses nama field tersebut dengan kata kunci this
 - This juga tidak hanya digunakan untuk mengakses field milik object saat ini, namun juga bisa digunakan untuk mengakses method
 - This bisa digunakan untuk mengatasi masalah variable shadowing
+                
+## Inheritance
+- Inheritance atau pewarisan adalah kemampuan untuk menurunkan sebuah class ke class lain
+- Dalam artian, kita bisa membuat class Parent dan class Child
+- Class Child, hanya bisa punya satu class Parent, namun satu class Parent bisa punya banyak class Child
+- Saat sebuah class diturunkan, maka semua field dan method yang ada di class Parent, secara otomatis akan dimiliki oleh class Child
+- Untuk melakukan pewarisan, di class child, kita harus menggunakan kata kunci extends lalau diikuti dengan nama class parent nya.
