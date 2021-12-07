@@ -1,11 +1,16 @@
 package com.yeahbutstill.demojavaoop.classsandobject;
 
-public class Manager {
+public class Manager extends Employee {
 
-    public String name;
+    public String company;
+
+    public Manager(String name, String company) {
+        super(name);
+        this.company = company;
+    }
 
     public Manager(String name) {
-        this.name = name;
+        super(name);
     }
 
     public void sayHello(String name) {
