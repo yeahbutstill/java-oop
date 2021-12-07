@@ -130,3 +130,11 @@
 - Polymorphism berasal dari bahasa Yunani yang berarti banyak bentuk
 - Dalam OOP, Polymorphism adalah kemampuan sebuah object berubah bentuk menjadi bentuk lain.
 - Polymorphism erat hubungan dengan inheritance
+
+## Type Check dan Casts (Konversi type data)
+- Sebelumnya kita sudah tau cara melakukan konversi tipe data(casts) di tipe data primitif
+- Casts juga bisa digunakan untuk tipe data bukan primitif(object)
+- Namun agar aman, sebelum melakukan casts pastikan kita melakukan type check(pengecekan tipe data), dengan menggunakan kata kunci instanceof
+- Hasil operator instanceof adalah boolean, true jika tipe data sesuai, false jika tidak sesuai
+                 
+## 
