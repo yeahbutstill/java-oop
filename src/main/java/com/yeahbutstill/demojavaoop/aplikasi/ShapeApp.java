@@ -1,4 +1,4 @@
-package com.yeahbutstill.demojavaoop;
+package com.yeahbutstill.demojavaoop.aplikasi;
 
 import com.yeahbutstill.demojavaoop.classsandobject.Rectangle;
 

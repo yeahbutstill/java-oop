@@ -111,35 +111,58 @@
   yang di class parent tidak bisa diakses lagi.
 
 ## Super Keyword
+
 - Kadang kita ingin mengakses method yang terdapat di class parent yang sudah terlanjur kita override di class child
 - Untuk mengakses method milik class parent kita bisa menggunakan kata kunci super
 - sederhananya, super digunakan untuk mengakses class parent
 - tidak hanya method, field milik parent class pun bisa kita akses menggunakan kata kunci super
 
 ## Super Constructor
-- Tidak hanya untuk mengakses method atau field yang ada di parent class, kata kunci super juga bisa digunakan untuk mengakses constructor
+
+- Tidak hanya untuk mengakses method atau field yang ada di parent class, kata kunci super juga bisa digunakan untuk
+  mengakses constructor
 - Namun syaratnya untuk mengakses parent class constructor, kita harus mengakses di dalam class child constructor
-- jika sebuah class parent tidak memiliki constructor yang tidak ada paramater-nya(tidak memiliki default constructor), maka class child wajib mengakses constructor class parent tersebut.
-                                       
+- jika sebuah class parent tidak memiliki constructor yang tidak ada paramater-nya(tidak memiliki default constructor),
+  maka class child wajib mengakses constructor class parent tersebut.
+
 ## Object Class
+
 - Di Java, setiap class yang kita buat secara otomatis adalah turunan dari class Object
-- Walaupun tidak secara langsung kita eksplisit menyebutkan extends Object, tapi secara otmatis Java akan membuat class kita extends Object.
+- Walaupun tidak secara langsung kita eksplisit menyebutkan extends Object, tapi secara otmatis Java akan membuat class
+  kita extends Object.
 - Bisa dikatakan class Object adalah superclass untuk semua class yang ada di Java.
 
 ## Polymorphism
+
 - Polymorphism berasal dari bahasa Yunani yang berarti banyak bentuk
 - Dalam OOP, Polymorphism adalah kemampuan sebuah object berubah bentuk menjadi bentuk lain.
 - Polymorphism erat hubungan dengan inheritance
 
 ## Type Check dan Casts (Konversi type data)
+
 - Sebelumnya kita sudah tau cara melakukan konversi tipe data(casts) di tipe data primitif
 - Casts juga bisa digunakan untuk tipe data bukan primitif(object)
-- Namun agar aman, sebelum melakukan casts pastikan kita melakukan type check(pengecekan tipe data), dengan menggunakan kata kunci instanceof
+- Namun agar aman, sebelum melakukan casts pastikan kita melakukan type check(pengecekan tipe data), dengan menggunakan
+  kata kunci instanceof
 - Hasil operator instanceof adalah boolean, true jika tipe data sesuai, false jika tidak sesuai
-                 
+
 ## Variable Hiding
-- Variable hiding merupakan masalah yang terjadi ketika kita membuat nama field yang sama di class child dengan nama field class parent
-- Tidak ada yang namanya field overriding, ketika kita membuat ulang nama field di class-class, itu berarti variable hiding
+
+- Variable hiding merupakan masalah yang terjadi ketika kita membuat nama field yang sama di class child dengan nama
+  field class parent
+- Tidak ada yang namanya field overriding, ketika kita membuat ulang nama field di class-class, itu berarti variable
+  hiding
 - Untuk mengatasi variable hiding, caranya kita bisa menggunakan super keyword
 - Yang membedakan variable hiding dan method overriding adalah ketika sebuah object di casts
-- Saat object di casts, method akan tetap mengakses method overriding, namun variable akan mengakses variable yang ada di class nya.
+- Saat object di casts, method akan tetap mengakses method overriding, namun variable akan mengakses variable yang ada
+  di class nya.
+
+## Package
+
+- Saat kita membuat aplikasi, bisa dipastikan kita akan banyak sekali membuat class
+- Jika class terlalu banyak, kadang akan menyulitkan kita untuk mencari atau mengklasifikasikan jenis-jenis class
+- Java memiliki fitur package, yaitu fitur mirip folder / direktori, dimana kita bisa menyimpan class-class kita di
+  dalam package
+- Sama seperti folder / direktori, package juga bisa nested, kita bisa menggunakan tanda titik(.) untuk membuat nested
+  package
+- Ketika kita menyimpan class di dalam package, maka diatas file Java nya, kita wajib menyebutkan nama package nya
