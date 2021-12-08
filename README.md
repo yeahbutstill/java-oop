@@ -166,3 +166,22 @@
 - Sama seperti folder / direktori, package juga bisa nested, kita bisa menggunakan tanda titik(.) untuk membuat nested
   package
 - Ketika kita menyimpan class di dalam package, maka diatas file Java nya, kita wajib menyebutkan nama package nya
+                       
+## Access Modifier
+- Access modifier adalah kemampuan membuat class field, method dan constructor dapat diakses dari mana saja
+- Sebelumnya teman-teman sudah melihat 2 access modifier, yaitu public dan default(no-modifier)
+- Sekarang kita akan bahas access modifier lainnya
+
+## Access Level
+| Modifier    | Class | Package | Subclass | World |
+|-------------|-------|---------|----------|-------|
+| public      | Y     | Y       | Y        | Y     |
+| protected   | Y     | Y       | Y        | N     |
+| no modifier | Y     | Y       | N        | N     |
+| private     | Y     | N       | N        | N     |
+- Public class 
+  - Saat kita membuat public class, kita hanya bisa membuat 1 public class di 1 file Java
+  - Salain itu, nama public class harus sama dengan nama file
+                             
+## Import
+- 
