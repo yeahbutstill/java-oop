@@ -166,43 +166,73 @@
 - Sama seperti folder / direktori, package juga bisa nested, kita bisa menggunakan tanda titik(.) untuk membuat nested
   package
 - Ketika kita menyimpan class di dalam package, maka diatas file Java nya, kita wajib menyebutkan nama package nya
-                       
+
 ## Access Modifier
+
 - Access modifier adalah kemampuan membuat class field, method dan constructor dapat diakses dari mana saja
 - Sebelumnya teman-teman sudah melihat 2 access modifier, yaitu public dan default(no-modifier)
 - Sekarang kita akan bahas access modifier lainnya
 
 ## Access Level
+
 | Modifier    | Class | Package | Subclass | World |
 |-------------|-------|---------|----------|-------|
 | public      | Y     | Y       | Y        | Y     |
 | protected   | Y     | Y       | Y        | N     |
 | no modifier | Y     | Y       | N        | N     |
 | private     | Y     | N       | N        | N     |
-- Public class 
-  - Saat kita membuat public class, kita hanya bisa membuat 1 public class di 1 file Java
-  - Salain itu, nama public class harus sama dengan nama file
-                             
+
+- Public class
+    - Saat kita membuat public class, kita hanya bisa membuat 1 public class di 1 file Java
+    - Salain itu, nama public class harus sama dengan nama file
+
 ## Import
+
 - Import adalah kemampuan untuk menggunakan class yang berada di package yang berbeda
 - Syarat class yang bisa digunakan jika package nya berada adalah class yang harus public
 
 ## Import Semua Package
+
 - Jika kita ingin menimport semua class di dalam sebuah package, kita bisa menggunakan tanda *, misal
 - import danilaway.belajar.oop.data.*
 
 ## Default Import
-- Secara default, semua class yang ada di package java.lang sudah auto import, jadi kita tidak perlu melakukan import secara manual
-- Contoh class String, Integer, Long, Boolean, dan lain-lain terdapat di package java.lang. Oleh karena itu, kita tidak perlu meng-import nya secara manual
+
+- Secara default, semua class yang ada di package java.lang sudah auto import, jadi kita tidak perlu melakukan import
+  secara manual
+- Contoh class String, Integer, Long, Boolean, dan lain-lain terdapat di package java.lang. Oleh karena itu, kita tidak
+  perlu meng-import nya secara manual
 
 ## Abstract class
+
 - Saat kita membuat class, kita bisa menjadikan sebuah class sebagai abstract class.
 - Abstract class artinya, class tersebut tidak bisa dibuat sebagai object secara langsung, hanya bisa diturunkan
 - Untuk membuat sebuah class menjadi abstract, kita bisa menggunakan kata kunci abstract sebelum kata kunci class
 - Dengan demikian abstract class bisa kita gunakan sebagai kontrak untuk class child
 
 ## Abstract Method
+
 - Saat kita membuat class yang abstract, kita bisa membuat abstract method juga di dalam class abstract tersebut
 - Saat kita membuat sebuah abstract method, kita tidak boleh membuat block method untuk method tersebu
 - Artinya, abstract method wajib di override di class child
 - Abstract method tidak boleh memiliki access modifier private
+
+## Geter dan Setter
+
+- Encapsulation
+    - Encapsulation artinya memastikan data sensitif sebuah object tersembunyi dari akses luar
+    - Hal ini bertujuan agar kita bisa menjaga agar data sebuah object tetap baik dan valid
+    - Untuk mencapai ini, biasanya kita akan membuat semua field menggunakan access modifier private, sehingga tidak
+      bisa diakses atau diubah dari luar
+    - Agar bisa diubah, kita akan menyembunyikan method untuk mengubah dan mendapatkan field tersebut
+    - Di Java, proses encapsulation sudah dibuat standarisasinya, dimana kita bisa menggunakan Getter dan Setter method
+    - Getter adalah function atau method yang dibuat untuk mengambil data field
+    - Setter adalah function atau method untuk mengubah data field
+
+## Standard Pembuatan Getter dan Setter
+
+| Tipe Data | Getter Method | Setter Method          |
+|-----------|---------------|------------------------|
+| boolean   | isXxx()       | setXxx(boolean value)  |
+| primitif  | getXxx()      | setXxx(primitif value) |
+| Object    | getXxx()      | setXxx(Object value)   |

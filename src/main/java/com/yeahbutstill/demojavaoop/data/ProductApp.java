@@ -1,7 +1,5 @@
 package com.yeahbutstill.demojavaoop.data;
 
-import com.yeahbutstill.demojavaoop.data.Product;
-
 public class ProductApp {
     public static void main(String[] args) {
         Product product = new Product();
