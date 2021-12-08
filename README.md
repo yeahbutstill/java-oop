@@ -246,3 +246,10 @@
   memiliki block
 - Di Interface kita tidak boleh memiliki field, kita hanya boleh memiliki constant(field yang tidak bisa diubah)
 - Untuk mewariskan interface, kita tidak menggunakan kata kunci extends, melainkan implements
+
+## Interface Inheritance
+
+- Sebelumnya kita sudah tahu kalau di Java, child class hanya bisa punya 1 class parent
+- Namun berbeda dengan interface, sebuah child class bisa implement lebih dari 1 interface
+- Bahkan interface pun bisa implement interface lain, bisa lebih dari 1. Namun jika interface ingin mewariskan interface
+  lain, kita menggunakan kata kunci extends, bukan implements
