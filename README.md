@@ -194,3 +194,15 @@
 ## Default Import
 - Secara default, semua class yang ada di package java.lang sudah auto import, jadi kita tidak perlu melakukan import secara manual
 - Contoh class String, Integer, Long, Boolean, dan lain-lain terdapat di package java.lang. Oleh karena itu, kita tidak perlu meng-import nya secara manual
+
+## Abstract class
+- Saat kita membuat class, kita bisa menjadikan sebuah class sebagai abstract class.
+- Abstract class artinya, class tersebut tidak bisa dibuat sebagai object secara langsung, hanya bisa diturunkan
+- Untuk membuat sebuah class menjadi abstract, kita bisa menggunakan kata kunci abstract sebelum kata kunci class
+- Dengan demikian abstract class bisa kita gunakan sebagai kontrak untuk class child
+
+## Abstract Method
+- Saat kita membuat class yang abstract, kita bisa membuat abstract method juga di dalam class abstract tersebut
+- Saat kita membuat sebuah abstract method, kita tidak boleh membuat block method untuk method tersebu
+- Artinya, abstract method wajib di override di class child
+- Abstract method tidak boleh memiliki access modifier private
