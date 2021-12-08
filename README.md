@@ -184,4 +184,13 @@
   - Salain itu, nama public class harus sama dengan nama file
                              
 ## Import
-- 
+- Import adalah kemampuan untuk menggunakan class yang berada di package yang berbeda
+- Syarat class yang bisa digunakan jika package nya berada adalah class yang harus public
+
+## Import Semua Package
+- Jika kita ingin menimport semua class di dalam sebuah package, kita bisa menggunakan tanda *, misal
+- import danilaway.belajar.oop.data.*
+
+## Default Import
+- Secara default, semua class yang ada di package java.lang sudah auto import, jadi kita tidak perlu melakukan import secara manual
+- Contoh class String, Integer, Long, Boolean, dan lain-lain terdapat di package java.lang. Oleh karena itu, kita tidak perlu meng-import nya secara manual
