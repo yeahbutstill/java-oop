@@ -271,3 +271,10 @@
 - Secara default, toString() ini akan menghasilkan:
     - namaClass + @ + hashCode
 - Namub kita bisa mengubahnya jika kita mau, agar object yang kita buat lebih mudah dibaca
+
+## Equals Mehod
+- Hal yang agak membingungkan di Java adalah, cara membandingkan object
+- Di bahasa pemrograman lain, untuk mengecek apakah sebuah object sama, biasanya menggunakan operator ==, di Java operator == hanya untuk mengecek data primitif
+- Untuk non primitif pengecekan nya menggunakan method equals
+- Dan secara default, method equals itu akan membandingkan dua buah object secara kesamaan posisi object di memory, artinya jika kita membuat 2 object yang isi field nya sama, tetap dianggap beda oleh method equals
+- Oleh karena itu, ada baiknya kita meng-override method equals milik class Object tersebut
