@@ -19,7 +19,7 @@ public class Bus implements Car {
     public boolean isMaintenance() {
         return false;
     }
-    
+
     public boolean isBig() {
         return true;
     }

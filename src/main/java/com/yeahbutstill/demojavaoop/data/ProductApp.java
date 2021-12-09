@@ -8,5 +8,7 @@ public class ProductApp {
 
         System.out.println(product.getName());
         System.out.println(product.getPrice());
+
+        System.out.println(product);
     }
 }

@@ -255,8 +255,19 @@
   lain, kita menggunakan kata kunci extends, bukan implements
 
 ## Default Method
+
 - Sebelumnya kita tahu bahwa interface, kita tidak bisa membuat konkrit yang memiliki block method
 - Namun sejak versi Java 8, ada fitur default method di interface
-- Fitur ini terjadi karena untuk maintain kontrak interface jika sudah terlalu banyak class yang implement interface tersebut
-- Ketika kita menambahkan satu method di interface, secara otomatis semua class yang implement akan rusak karena harus meng-override method tersebut
+- Fitur ini terjadi karena untuk maintain kontrak interface jika sudah terlalu banyak class yang implement interface
+  tersebut
+- Ketika kita menambahkan satu method di interface, secara otomatis semua class yang implement akan rusak karena harus
+  meng-override method tersebut
 - Dengan menggunakan default method, kita bisa menambahkan konkrit method di interface.
+
+## ToString Method
+
+- toString() adalah method yang terdapat di class Object
+- Method ini biasanya digunakan untuk merepresentasikan object dalam bentuk String
+- Secara default, toString() ini akan menghasilkan:
+    - namaClass + @ + hashCode
+- Namub kita bisa mengubahnya jika kita mau, agar object yang kita buat lebih mudah dibaca
