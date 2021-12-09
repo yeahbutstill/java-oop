@@ -10,5 +10,11 @@ public class ProductApp {
         System.out.println(product.getPrice());
 
         System.out.println(product);
+
+        Product product1 = new Product();
+        product.name = "Sarmidu";
+        product.price = 4000;
+
+        System.out.println(product.equals(product1));
     }
 }
