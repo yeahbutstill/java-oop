@@ -253,3 +253,10 @@
 - Namun berbeda dengan interface, sebuah child class bisa implement lebih dari 1 interface
 - Bahkan interface pun bisa implement interface lain, bisa lebih dari 1. Namun jika interface ingin mewariskan interface
   lain, kita menggunakan kata kunci extends, bukan implements
+
+## Default Method
+- Sebelumnya kita tahu bahwa interface, kita tidak bisa membuat konkrit yang memiliki block method
+- Namun sejak versi Java 8, ada fitur default method di interface
+- Fitur ini terjadi karena untuk maintain kontrak interface jika sudah terlalu banyak class yang implement interface tersebut
+- Ketika kita menambahkan satu method di interface, secara otomatis semua class yang implement akan rusak karena harus meng-override method tersebut
+- Dengan menggunakan default method, kita bisa menambahkan konkrit method di interface.

@@ -8,4 +8,9 @@ public interface Car extends HasBrand, IsMaintenance {
 
     public Integer getTier();
 
+    // default method
+    default boolean isBig() {
+        return false;
+    }
+
 }
