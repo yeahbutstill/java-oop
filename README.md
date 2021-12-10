@@ -298,3 +298,8 @@ Tidak mudah meng-override method hashCode, karena ada kontraknya:
 - Jika digunakan di variable, maka variable tersebut tidak bisa berubah lagi datanya
 - Final pun bisa digunakan di class, dimana jika kita menggunakan kata kunci final sebelum class, maka kita menandakan bahwa class tersebut tidak bisa diwariskan lagi
 - Secara otomatis semua class child nya akan error
+
+## Final Method
+- Kata kunci final juga bisa digunakan di Method
+- Jika sebuah method kita tambahkan kata kunci final, maka artinya method tersebut tidak bisa di override lagi di class child nya
+- Ini sangat cocok jikat kita ingin mengunci implementasi dari sebuah method agar tidak bisa diubah lagi oleh class child nya
