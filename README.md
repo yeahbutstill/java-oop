@@ -281,44 +281,80 @@
 - Dan secara default, method equals itu akan membandingkan dua buah object secara kesamaan posisi object di memory,
   artinya jika kita membuat 2 object yang isi field nya sama, tetap dianggap beda oleh method equals
 - Oleh karena itu, ada baiknya kita meng-override method equals milik class Object tersebut
-                        
+
 ## HashCode Method
-- Method hashCode adalah method representasi integer object kita, mirip toString yang merupakan representasi String, hashCode adalah representasi integer
-- HashCode sangat bermanfaat untuk membuat struktur data unique seperti HashMap, Set dan lain-lain, karena cukup menggunakan hashCode method untuk mendapatkan identitas unique object kita
-- Secara default hashCode akan mengembalikan nilai integer sesuai data di memory, namun kita bisa mengonverride nya jika kita ingin
-                                   
+
+- Method hashCode adalah method representasi integer object kita, mirip toString yang merupakan representasi String,
+  hashCode adalah representasi integer
+- HashCode sangat bermanfaat untuk membuat struktur data unique seperti HashMap, Set dan lain-lain, karena cukup
+  menggunakan hashCode method untuk mendapatkan identitas unique object kita
+- Secara default hashCode akan mengembalikan nilai integer sesuai data di memory, namun kita bisa mengonverride nya jika
+  kita ingin
+
 ## Kontrak HashCode Method
+
 Tidak mudah meng-override method hashCode, karena ada kontraknya:
+
 - Sebanyak apapun hashCode dipanggil, untuk object yang sama, harus menghasilkan data integer yang sama
 - Jika ada 2 object yang sama jika dibandingkan menggunakan method equals, maka nilai hashCode nya juga harus sama
-- Tidak wajib hashCode berbeda jika method equals menghasilkan false, karena memang keterbatasan jumlah integer sekitar 2 milyar
+- Tidak wajib hashCode berbeda jika method equals menghasilkan false, karena memang keterbatasan jumlah integer sekitar
+  2 milyar
 
 ## Final Class
+
 - Sebelumnya kita pernah menggunakan kata kunci final di Java
 - Jika digunakan di variable, maka variable tersebut tidak bisa berubah lagi datanya
-- Final pun bisa digunakan di class, dimana jika kita menggunakan kata kunci final sebelum class, maka kita menandakan bahwa class tersebut tidak bisa diwariskan lagi
+- Final pun bisa digunakan di class, dimana jika kita menggunakan kata kunci final sebelum class, maka kita menandakan
+  bahwa class tersebut tidak bisa diwariskan lagi
 - Secara otomatis semua class child nya akan error
 
 ## Final Method
+
 - Kata kunci final juga bisa digunakan di Method
-- Jika sebuah method kita tambahkan kata kunci final, maka artinya method tersebut tidak bisa di override lagi di class child nya
-- Ini sangat cocok jikat kita ingin mengunci implementasi dari sebuah method agar tidak bisa diubah lagi oleh class child nya
+- Jika sebuah method kita tambahkan kata kunci final, maka artinya method tersebut tidak bisa di override lagi di class
+  child nya
+- Ini sangat cocok jikat kita ingin mengunci implementasi dari sebuah method agar tidak bisa diubah lagi oleh class
+  child nya
 
 ## Inner Class
+
 - Di Java, kita bisa membuat class di dalam class, atau disebut dengan Inner Class
-- Salah satu kasus kita membuat inner class biasanya ketika kita butuh membuat beberapa class yang saling berhubungan, dimana sebuah class tidak bisa dibuat tanpa class lain
-- Misal kita perlu membuat class Employee, dimana membutuhkan class Company, maka kita bisa membuat class Employee sebagai inner class Company
+- Salah satu kasus kita membuat inner class biasanya ketika kita butuh membuat beberapa class yang saling berhubungan,
+  dimana sebuah class tidak bisa dibuat tanpa class lain
+- Misal kita perlu membuat class Employee, dimana membutuhkan class Company, maka kita bisa membuat class Employee
+  sebagai inner class Company
 - Cara membuat inner class, cukup membuatnya di dalam blok class outer class nya
 
 ## Keuntungan Inner Class Mengakses Outer Class
-- Saat kita membuat inner class adalah, kemampuan untuk mengakses outer class nya 
+
+- Saat kita membuat inner class adalah, kemampuan untuk mengakses outer class nya
 - Inner class bisa membaca semua private member yang ada di outer class nya
-- Untuk mengakses object class nya, kita bisa menggunakan nama class outer nya diikuti dengan kata kunci this, misal Company.this
-- Dan untuk mengakses super class outer class nya, kita bisa menggunakan nama class outer nya diikuti dengan kata kunci super, misal Company.super
+- Untuk mengakses object class nya, kita bisa menggunakan nama class outer nya diikuti dengan kata kunci this, misal
+  Company.this
+- Dan untuk mengakses super class outer class nya, kita bisa menggunakan nama class outer nya diikuti dengan kata kunci
+  super, misal Company.super
 
 ## Anonymous Class
+
 - Anonymous class atau class tanpa nama
 - Adalah kemampuan mendeklarasikan class, sekaligus meng-instansiasi object-nya secara langsung
-- Anonymous class sebenarnya termasuk inner class, dimana outer class nya adalah tempat dimana kita membuat anonymous class tersebut
-- Anonymous class sangat cocok ketika kita berhadapan dengan kasus membuat implementasi interface atau abstract class sederhana, tanpa harus membuat implementasi class nya
+- Anonymous class sebenarnya termasuk inner class, dimana outer class nya adalah tempat dimana kita membuat anonymous
+  class tersebut
+- Anonymous class sangat cocok ketika kita berhadapan dengan kasus membuat implementasi interface atau abstract class
+  sederhana, tanpa harus membuat implementasi class nya
 - Kekurangan Anoymous Class adalah tidak bisa di reuse
+
+## Static Keyword
+
+- Sebelumnya kita sudah sering melihat kata kunci static, namun belum pernah kita bahas
+- Dengan menggunakan kata kunci static, kita bisa membuat field, method atau class bisa diakses langsung tanpa melalui
+  object nya
+- Perlu diingat, static hanya bisa mengakses static lainnya
+
+## Static Dapat Digunakan Di
+
+- Field, atau disebut class variable, artinya field tersebut bisa diakses langsung tanpa membuat object terlebih dahulu
+- Method, atau disebut class method, artinya method tersebut bisa diakses langsung tanpa membuat object terlebih dahulu
+- Block, static block otomatis dieksekusi ketika sebuah class di load
+- Inner Class, artinya inner class tersebut bisa diakses secara langsung tanpa harus membuat object outer class terlebih
+  dahulu. Static pada inner class menyebabkan kita tidak bisa mengakses lagi object outer class nya.
