@@ -21,5 +21,6 @@ public class ProductApp {
 
         System.out.println(product.equals(product1));
         System.out.println(product1.equals(product2));
+        System.out.println(product1.hashCode() == product2.hashCode());
     }
 }
