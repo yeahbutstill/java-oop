@@ -33,14 +33,14 @@ public class Product {
 
         Product product = (Product) o;
 
-        if (!getName().equals(product.getName())) return false;
-        return getPrice().equals(product.getPrice());
+        if (getName() != null ? !getName().equals(product.getName()) : product.getName() != null) return false;
+        return getPrice() != null ? getPrice().equals(product.getPrice()) : product.getPrice() == null;
     }
 
     @Override
     public int hashCode() {
-        int result = getName().hashCode();
-        result = 31 * result + getPrice().hashCode();
+        int result = getName() != null ? getName().hashCode() : 0;
+        result = 31 * result + (getPrice() != null ? getPrice().hashCode() : 0);
         return result;
     }
 }
