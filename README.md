@@ -373,3 +373,9 @@ Tidak mudah meng-override method hashCode, karena ada kontraknya:
 - Secara default, constructor di record class akan dibuat secara otomatis, sesuai dengan definisi record class parameter
 - Namun jika kita ingin melakukan sesuatu di constructor tersebut, kita bisa membuat compact constructor, yaitu constructor tanpa tanda()
 - Selain itu kita juga bisa melakukan constructor overloading, namun ada syaratnya, yaitu constructor overloading nya harus tetap memanggil constructor utama yang secra otomatis dibuatkan di record class
+              
+## Enum Class
+- Saat kita membuat aplikasi, kadang kita akan bertemu dengan jenis-jenis data yang nilainya terbatas
+- Misal, gender, ada male dan female, atau tipe customer, ada standard dan premium atau VIP dan lain-lain
+- Dalam kasus seperti ini kita bisa menggunakan enum class, yaitu class yang berisikan nilai terbatas yang sudah ditentukan 
+- Saat membuat enaum class, secara otomatis dia akan meng-extends class java.lang.Enum, oleh karena itu class enum tidak akan bisa extends class lain, namun masih tetap bisa di implements interface.
