@@ -6,7 +6,8 @@ import com.yeahbutstill.demojavaoop.enums.Level;
 public class EnumApp {
     public static void main(String[] args) {
         Customer customer = new Customer();
-        customer.level = Level.STANDARD;
-        System.out.println(customer.level);
+        customer.setLevel(Level.STANDARD);
+        customer.setName("Dani");
+        System.out.println(customer.getLevel() + " Level " + customer.getName());
     }
 }
