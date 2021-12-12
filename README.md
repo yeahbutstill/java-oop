@@ -397,3 +397,9 @@ Tidak mudah meng-override method hashCode, karena ada kontraknya:
 - Sama seperti class biasanya, di class enum pun kita bisa menambahkan members(field, method dan constructor)
 - Khusus constructor, kita tidak membuat public constructor, karena memang tujuan enum bukun untuk di instansiasi secara
   bebas
+
+## Exception
+- Saat kita membuat aplikasi, kita tidak akan terhindar dengan yang namanya error
+- Di Java, error direpresentasikan dengan istilah exception, dan semua direpresentasikan dalam bentuk class exception
+- Kita bisa menggunakan class exception sendiri, atau menggunakan yang sudah disediakan oleh Java
+- Jikat kita ingin membuat exception, maka kita harus membuat class yang extends class Throwable atau turunan-turunannya
