@@ -360,22 +360,40 @@ Tidak mudah meng-override method hashCode, karena ada kontraknya:
   dahulu. Static pada inner class menyebabkan kita tidak bisa mengakses lagi object outer class nya.
 
 ## Java 14 - Experimental
+
 - Fitur ini masih versi preview dan belum stabil di versi Java 14, namun kita sudah bisa mencobanya
-- Tapi perlu diingat, bahwa karena fitur ini masih experimental, artinya tidak ada jaminan di versi Java mendatang, fitur ini akan tetap ada, bisa saja dihilangkan.
+- Tapi perlu diingat, bahwa karena fitur ini masih experimental, artinya tidak ada jaminan di versi Java mendatang,
+  fitur ini akan tetap ada, bisa saja dihilangkan.
 
 ## Record Class
-- Kadang kita sering membuat class, hanya untuk class yang berisikan data. Hanya berisi getter, equals, hashCode, dan toString method
+
+- Kadang kita sering membuat class, hanya untuk class yang berisikan data. Hanya berisi getter, equals, hashCode, dan
+  toString method
 - Record class digunakan untuk mempermudah pembuatan jenis class tersebut
-- Saat kita membuat record class, secara otomatis Java akan membuatkan getter, equals, hashCode dan toString method secara otomatis dan juga constructor secara otomatis
-- Saat membuat record class, secara otomatis kita akan meng-extends class java.lang.Record yang artinya kita tidak bisa extends class lain. Namun kita tetap bisa meng-implement interface
+- Saat kita membuat record class, secara otomatis Java akan membuatkan getter, equals, hashCode dan toString method
+  secara otomatis dan juga constructor secara otomatis
+- Saat membuat record class, secara otomatis kita akan meng-extends class java.lang.Record yang artinya kita tidak bisa
+  extends class lain. Namun kita tetap bisa meng-implement interface
 
 ## Record Class Constructor
+
 - Secara default, constructor di record class akan dibuat secara otomatis, sesuai dengan definisi record class parameter
-- Namun jika kita ingin melakukan sesuatu di constructor tersebut, kita bisa membuat compact constructor, yaitu constructor tanpa tanda()
-- Selain itu kita juga bisa melakukan constructor overloading, namun ada syaratnya, yaitu constructor overloading nya harus tetap memanggil constructor utama yang secra otomatis dibuatkan di record class
-              
+- Namun jika kita ingin melakukan sesuatu di constructor tersebut, kita bisa membuat compact constructor, yaitu
+  constructor tanpa tanda()
+- Selain itu kita juga bisa melakukan constructor overloading, namun ada syaratnya, yaitu constructor overloading nya
+  harus tetap memanggil constructor utama yang secra otomatis dibuatkan di record class
+
 ## Enum Class
+
 - Saat kita membuat aplikasi, kadang kita akan bertemu dengan jenis-jenis data yang nilainya terbatas
 - Misal, gender, ada male dan female, atau tipe customer, ada standard dan premium atau VIP dan lain-lain
-- Dalam kasus seperti ini kita bisa menggunakan enum class, yaitu class yang berisikan nilai terbatas yang sudah ditentukan 
-- Saat membuat enaum class, secara otomatis dia akan meng-extends class java.lang.Enum, oleh karena itu class enum tidak akan bisa extends class lain, namun masih tetap bisa di implements interface.
+- Dalam kasus seperti ini kita bisa menggunakan enum class, yaitu class yang berisikan nilai terbatas yang sudah
+  ditentukan
+- Saat membuat enaum class, secara otomatis dia akan meng-extends class java.lang.Enum, oleh karena itu class enum tidak
+  akan bisa extends class lain, namun masih tetap bisa di implements interface.
+
+## Enum Members
+
+- Sama seperti class biasanya, di class enum pun kita bisa menambahkan members(field, method dan constructor)
+- Khusus constructor, kita tidak membuat public constructor, karena memang tujuan enum bukun untuk di instansiasi secara
+  bebas
