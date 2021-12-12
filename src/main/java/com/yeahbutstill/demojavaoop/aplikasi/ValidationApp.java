@@ -11,6 +11,8 @@ public class ValidationApp {
             ValidationUtil.validaate(loginRequest);
         } catch (ValidationException | NullPointerException e) {
             System.out.println("Terjadi Error Dengan Pesan " + e.getMessage());
+        } finally {
+            System.out.println("Error Gak Error, tetap di panggil");
         }
     }
 }

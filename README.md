@@ -413,3 +413,8 @@ Tidak mudah meng-override method hashCode, karena ada kontraknya:
 - Saat kita memanggil sebuah function yang bisa menyebabkan exception, maka kita wajib menggunakan try-catch expression di Java
 - ini gunanya agar kita bisa menangkap exception yang terjadi, karena jika tidak ditangkap, lalu terjadi exception, maka secara otomatis program kita akan berhenti
 - Cara menggunakan try-catch expression di java sangat mudah, di block try, kita tinggal panggil method yang bisa menyebabkan exception dan block catch kita bisa melakukan sesuatu jika terjadi exception
+
+## Finally Keyword
+- Dalam try-catch, kita bisa menambahkan block finally
+- Block finally ini adalah block dimana akan selalu dieksekusi baik terjadi exception ataupun tidak 
+- Ini sangat cocok ketika kita ingin melakukan sesuatu, tidak peduli sukses ataupun gagal, misal di block try kita ingin membaca file, di block catch kita akan tangkap jika terjadi error, dan di block finally error ataupun sukses membaca file, kita wajib menutup koneksi ke file tersebut, biar tidak menggantung di memory
