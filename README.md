@@ -403,3 +403,13 @@ Tidak mudah meng-override method hashCode, karena ada kontraknya:
 - Di Java, error direpresentasikan dengan istilah exception, dan semua direpresentasikan dalam bentuk class exception
 - Kita bisa menggunakan class exception sendiri, atau menggunakan yang sudah disediakan oleh Java
 - Jikat kita ingin membuat exception, maka kita harus membuat class yang extends class Throwable atau turunan-turunannya
+
+## Membuat Exception
+- Exception biasanya terjadi di method, ketika kita membuat exception di sebuah method, maka method tersebut harus ditandai dengan kata kunci throws diikuti dengan class exception nya.
+- Jika method tersebut bisa menimbulkan lebih dari satu jenis exception, kita bisa menambahkan lebih dari satu class exception
+- Di dalam kode program kita, untuk membuat exception kita cukup menggunakan kata kunci throw, diikuti dengan object exception nya
+
+## Try Catch
+- Saat kita memanggil sebuah function yang bisa menyebabkan exception, maka kita wajib menggunakan try-catch expression di Java
+- ini gunanya agar kita bisa menangkap exception yang terjadi, karena jika tidak ditangkap, lalu terjadi exception, maka secara otomatis program kita akan berhenti
+- Cara menggunakan try-catch expression di java sangat mudah, di block try, kita tinggal panggil method yang bisa menyebabkan exception dan block catch kita bisa melakukan sesuatu jika terjadi exception
