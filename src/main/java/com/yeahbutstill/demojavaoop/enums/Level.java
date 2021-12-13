@@ -1,5 +1,8 @@
 package com.yeahbutstill.demojavaoop.enums;
 
+import com.yeahbutstill.demojavaoop.codeannotation.Fancy;
+
+@Fancy(name = "Level", tags = {"app", "java"})
 public enum Level {
     STANDARD("Standard Edition"),
     PREMIUM("Premium Edition"),

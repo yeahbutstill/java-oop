@@ -449,23 +449,52 @@ secara garis besar, di Java, exception dibagi menjadi 3 jenis
 - Error (yang akan kita bahas di materi selanjutnya)
 
 ### Perlu Diperhatikan
+
 - Walaupun runtime exception tidak wajib try-catch, tapi ada baiknya kita tetap melakukan try-catch
 - Karena jika terjadi runtime exception, yang dilakukan adalah program kita berhenti
 
 ## Error
+
 - Error adalah jenis exception yang terakhir
 - Error adalah sebuah class di Java, yang tidak direkomendasikan untuk di try-catch
 - Biasanya error terjadi ketika ada masalah serius, dan sangat tidak di rekomendasikan untuk di try catch
 - Artinya, direkomendasikan untuk mematikan aplikasi
-- Contoh, misal jika diawal aplikasi kita tidak bisa terkoneksi ke database, direkomendasikan untuk membuat exception jenis Error, dan menghentikan aplikasi
+- Contoh, misal jika diawal aplikasi kita tidak bisa terkoneksi ke database, direkomendasikan untuk membuat exception
+  jenis Error, dan menghentikan aplikasi
 
 ## StackTraceElement Class
+
 - Throwable memiliki method yang bernama getStackTrace(), dimana menghasilkan Array dari StackTraceElement Object
 - StackTraceElement berisikan informasi tentang class, file, bahkan baris lokasi terjadina error
 - Class StackTraceElement ini sangat penting untuk menelusuri lokasi terjadinya error yang terjadi
-- Cara yang paling mudah, kita bisa memanggil method printStackTrace() class Throwable, untuk memprint ke console detail error StackTraceElement nya.
-           
+- Cara yang paling mudah, kita bisa memanggil method printStackTrace() class Throwable, untuk memprint ke console detail
+  error StackTraceElement nya.
+
 ## Try With Resource
+
 - Di java 7, terdapat fitur baru yang bernama try with resource
-- Try with resource adalah sebuah mekanisme agar kita lebih mudah menggunakan resource (yang wajib di close) dalam block try
+- Try with resource adalah sebuah mekanisme agar kita lebih mudah menggunakan resource (yang wajib di close) dalam block
+  try
 - Jika kita ingin menggunakan fitur ini, kita wajib menggunakan interface AutoCloseable
+
+## Annotation
+
+- Annotation adalah menambahkan metadata ke kode program yang kita buat
+- Tidak semua orang membutuhkan Annotation biasanya Annotation digunakan saat kita ingin membuat library / framework
+- Annotation sendiri bisa diakses menggunakan Reflection, yang akan kita bahas nanti
+- Untuk membuat annotation, kita bisa menggunakan kata kunci @interface
+- Annotation hanya bisa memiliki method dengan tipe data sederhana, dan bisa memiliki default value
+
+## Attribute Annotation
+
+| Attribute  | Keterangan |
+|------------|-----------|
+| @Target    | Memberitahu annotation bisa digunakan dimana? Class, Method, Field, dan lain-lain |
+| @Retention | Memberitahu annotation apakah disimpan di hasil kompilasi, dan apakah bisa dibaca oleh reflection |
+
+## Predefined Annotation
+Java juga sudah memiliki annotation bawaan, seperti:
+- @Override, untuk menandai bahwa method yang meng-override method parent class nya
+- @Deprecated, untuk menandai bahwa method tersebut tidak direkomendasikan lagi untuk digunakan
+- @FunctionalInterface, untuk menandai bahwa class tersebut bisa dibuat sebagai lambda expression
+- dan lain-lain

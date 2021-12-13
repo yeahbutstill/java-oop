@@ -8,6 +8,7 @@ public class MultipleStackTraceElementApp {
             e.printStackTrace();
         }
     }
+
     public static void sampleError() {
         try {
             String[] buah = {
