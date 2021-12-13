@@ -458,3 +458,9 @@ secara garis besar, di Java, exception dibagi menjadi 3 jenis
 - Biasanya error terjadi ketika ada masalah serius, dan sangat tidak di rekomendasikan untuk di try catch
 - Artinya, direkomendasikan untuk mematikan aplikasi
 - Contoh, misal jika diawal aplikasi kita tidak bisa terkoneksi ke database, direkomendasikan untuk membuat exception jenis Error, dan menghentikan aplikasi
+
+## StackTraceElement Class
+- Throwable memiliki method yang bernama getStackTrace(), dimana menghasilkan Array dari StackTraceElement Object
+- StackTraceElement berisikan informasi tentang class, file, bahkan baris lokasi terjadina error
+- Class StackTraceElement ini sangat penting untuk menelusuri lokasi terjadinya error yang terjadi
+- Cara yang paling mudah, kita bisa memanggil method printStackTrace() class Throwable, untuk memprint ke console detail error StackTraceElement nya.
