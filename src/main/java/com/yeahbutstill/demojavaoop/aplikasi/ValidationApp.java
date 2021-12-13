@@ -1,6 +1,7 @@
 package com.yeahbutstill.demojavaoop.aplikasi;
 
 import com.yeahbutstill.demojavaoop.membuatexception.ValidationException;
+import com.yeahbutstill.demojavaoop.membuatexception.utils.ValidateRuntime;
 import com.yeahbutstill.demojavaoop.membuatexception.utils.ValidationUtil;
 import com.yeahbutstill.demojavaoop.redcordclasss.LoginRequest;
 
@@ -14,5 +15,9 @@ public class ValidationApp {
         } finally {
             System.out.println("Error Gak Error, tetap di panggil");
         }
+
+        // Runtime Exception
+        LoginRequest loginRequest1 = new LoginRequest(null, null);
+        ValidateRuntime.validateRuntime(loginRequest1);
     }
 }
