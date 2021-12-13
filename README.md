@@ -464,3 +464,8 @@ secara garis besar, di Java, exception dibagi menjadi 3 jenis
 - StackTraceElement berisikan informasi tentang class, file, bahkan baris lokasi terjadina error
 - Class StackTraceElement ini sangat penting untuk menelusuri lokasi terjadinya error yang terjadi
 - Cara yang paling mudah, kita bisa memanggil method printStackTrace() class Throwable, untuk memprint ke console detail error StackTraceElement nya.
+           
+## Try With Resource
+- Di java 7, terdapat fitur baru yang bernama try with resource
+- Try with resource adalah sebuah mekanisme agar kita lebih mudah menggunakan resource (yang wajib di close) dalam block try
+- Jika kita ingin menggunakan fitur ini, kita wajib menggunakan interface AutoCloseable
