@@ -493,8 +493,28 @@ secara garis besar, di Java, exception dibagi menjadi 3 jenis
 | @Retention | Memberitahu annotation apakah disimpan di hasil kompilasi, dan apakah bisa dibaca oleh reflection |
 
 ## Predefined Annotation
+
 Java juga sudah memiliki annotation bawaan, seperti:
+
 - @Override, untuk menandai bahwa method yang meng-override method parent class nya
 - @Deprecated, untuk menandai bahwa method tersebut tidak direkomendasikan lagi untuk digunakan
 - @FunctionalInterface, untuk menandai bahwa class tersebut bisa dibuat sebagai lambda expression
 - dan lain-lain
+
+## Reflection
+
+- Reflection adalah kemampuan melihat struktur aplikasi kita pada saat bejalan
+- Reflection biasanya sangat berguna saat kita ingin membuat library ataupun framework, sehingga bisa meng-otomatisasi
+  pekerjaan
+- Untuk mengakses reflection class dari sebuah object, kita bisa menggunakan method getClass() atau NamaClass.class
+
+### Perlu Diperhatikan
+
+- Reflection adalah materi yang sangat panjang
+- Oleh karena itu materi Java Reflection akan dibuatkan course terpisah.
+
+## Meteri Selanjutnya
+
+- Java Classes
+- Java Generic
+- Java Collection
